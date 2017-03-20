@@ -13,7 +13,7 @@ class PersonTest extends TestCase
 
     /**
      * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessageRegExp /\$targetName must be required/
+     * @expectedExceptionMessageRegExp /targetName must be required/
      */
     public function testSayHelloToWithEmptyTargetNameThrowsInvalidArgumentException()
     {

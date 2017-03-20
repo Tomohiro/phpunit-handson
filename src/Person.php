@@ -8,7 +8,7 @@ class Person
     public function sayHelloTo($targetName = null)
     {
         if (is_null($targetName)) {
-            throw new \InvalidArgumentException("\$targetName must be required");
+            throw new \InvalidArgumentException("targetName must be required");
         }
 
         return "Hello, ${targetName}";
