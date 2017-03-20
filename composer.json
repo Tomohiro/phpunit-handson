@@ -1,0 +1,23 @@
+{
+    "name": "tomohiro/phpunit-handson",
+    "type": "library",
+    "description": "PHPUnit Hands-on project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tomohiro Taira",
+            "email": "tomohiro.t@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "~7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "6.0.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "PHPUnit\\Handson\\": "src"
+        }
+    }
+}
