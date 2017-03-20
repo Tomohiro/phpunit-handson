@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+docker info 1>/dev/null
+
+# Install composer from https://hub.docker.com/r/composer/composer/
+echo "==> Pull the composer container image"
+docker pull composer/composer:alpine
+
+# Install PHPUnit from https://hub.docker.com/r/phpunit/phpunit/
+echo "==> Pull the PHPUnit container image"
+docker pull phpunit/phpunit
