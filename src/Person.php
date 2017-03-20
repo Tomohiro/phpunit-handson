@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 namespace PHPUnit\Handson;
 
-class Hello
+class Person
 {
-    public function sayTo($targetName = null)
+    public function sayHelloTo($targetName = null)
     {
         if (is_null($targetName)) {
             throw new \InvalidArgumentException("\$targetName must be required");

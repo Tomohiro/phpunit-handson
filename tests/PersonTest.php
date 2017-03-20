@@ -2,28 +2,28 @@
 declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
-use PHPUnit\Handson\Hello;
+use PHPUnit\Handson\Person;
 
-class HelloTest extends TestCase
+class PersonTest extends TestCase
 {
     protected function setUp()
     {
-        $this->obj = new Hello();
+        $this->obj = new Person();
     }
 
     /**
      * @expectedException \InvalidArgumentException
      * @expectedExceptionMessageRegExp /\$targetName must be required/
      */
-    public function testSayToWithEmptyTargetNameThrowsInvalidArgumentException()
+    public function testSayHelloToWithEmptyTargetNameThrowsInvalidArgumentException()
     {
-        $this->obj->sayTo(null);
+        $this->obj->sayHelloTo(null);
     }
 
-    public function testSayToReturnsMessage()
+    public function testSayHelloWithTargetNameToReturnsMessage()
     {
         $expected = 'Hello, John';
-        $actual = $this->obj->sayTo('John');
+        $actual = $this->obj->sayHelloTo('John');
         $this->assertEquals($expected, $actual);
     }
 }
