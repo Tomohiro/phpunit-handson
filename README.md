@@ -1,6 +1,8 @@
 PHPUnit Hands-on
 ================================================================================
 
+[![Build Status](https://img.shields.io/travis/Tomohiro/phpunit-handson.svg?style=flat-square)](https://travis-ci.org/Tomohiro/phpunit-handson)
+
 
 Requirements
 --------------------------------------------------------------------------------
