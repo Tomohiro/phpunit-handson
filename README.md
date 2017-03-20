@@ -24,10 +24,10 @@ Clone this repository:
 $ git clone https://github.com/Tomohiro/phpunit-handson
 ```
 
-Bootstrap:
+Initialize:
 
 ```sh
-$ ./script/bootstrap
+$ ./script/setup  # Setup dependency docker container and composer packages
 ```
 
 
