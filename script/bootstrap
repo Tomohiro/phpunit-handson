@@ -6,9 +6,9 @@ cd "$(dirname "$0")/.."
 
 docker info 1>/dev/null
 
-# Install composer from https://hub.docker.com/r/composer/composer/
+# Install composer from https://hub.docker.com/_/composer/
 echo "==> Pull the composer container image"
-docker pull composer/composer:alpine
+docker pull composer
 
 # Install PHPUnit from https://hub.docker.com/r/phpunit/phpunit/
 echo "==> Pull the PHPUnit container image"
