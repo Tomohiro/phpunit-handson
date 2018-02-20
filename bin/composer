@@ -3,4 +3,4 @@
 set -e
 
 cd "$(dirname "$0")/.."
-docker run --rm -v $(pwd):/app composer/composer:alpine "$@"
+docker run --rm -v $(pwd):/app composer "$@"
